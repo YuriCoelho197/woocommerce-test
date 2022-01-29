@@ -1,29 +1,44 @@
 {
-  "name": "woocommerce/woocommerce-test",
-  "description": "woocommerce",
-  "require": {
-    "roots/wordpress": "*",
-    "wpackagist-plugin/woocommerce": "^6.1",
-    "wpackagist-theme/storefront": "^3.9"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
+    "name": "woocommerce/woocommerce-test",
+    "description": "woocommerce",
+    "require": {
+        "php": "^7.2||^8.0",
+        "roots/wordpress": "*",
+        "wpackagist-plugin/woocommerce": "^6.1",
+        "wpackagist-theme/storefront": "^3.9"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "scripts": {
+        "move-wordpress": [
+            "rm -rf wordpress/wp-content/plugins/*",
+            "rm -rf wordpress/wp-content/themes/*",
+            "cp -rf wordpress/* .",
+            "rm -rf wordpress"
+        ],
+        "post-install-cmd": [
+            "@move-wordpress"
+        ],
+        "post-update-cmd": [
+            "@move-wordpress"
+        ]
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",    
+        "codeception/module-asserts": "^1.3.1",
+        "codeception/module-db": "^1.1",
+        "codeception/module-webdriver": "^1.2",
+        "lucatume/wp-browser": "^2.6",
+        "codeception/module-phpbrowser": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": false,
+            "roots/wordpress-core-installer": false
+        }
     }
-  ],
-  "scripts": {
-    "move-wordpress": [
-      "rm -rf wordpress/wp-content/plugins/*",
-      "rm -rf wordpress/wp-content/themes/*",
-      "cp -rf wordpress/* .",
-      "rm -rf wordpress"
-    ],
-    "post-install-cmd": [
-      "@move-wordpress"
-    ],
-    "post-update-cmd": [
-      "@move-wordpress"
-    ]
-  }
 }
