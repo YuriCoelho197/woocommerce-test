@@ -3,7 +3,8 @@
   "description": "woocommerce",
   "require": {
     "roots/wordpress": "*",
-    "wpackagist-plugin/woocommerce": "^6.1"
+    "wpackagist-plugin/woocommerce": "^6.1",
+    "wpackagist-theme/storefront": "^3.9"
   },
   "repositories": [
     {
