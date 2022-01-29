@@ -1,0 +1,28 @@
+{
+  "name": "woocommerce/woocommerce-test",
+  "description": "woocommerce",
+  "require": {
+    "roots/wordpress": "*",
+    "wpackagist-plugin/woocommerce": "^6.1"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "scripts": {
+    "move-wordpress": [
+      "rm -rf wordpress/wp-content/plugins/*",
+      "rm -rf wordpress/wp-content/themes/*",
+      "cp -rf wordpress/* .",
+      "rm -rf wordpress"
+    ],
+    "post-install-cmd": [
+      "@move-wordpress"
+    ],
+    "post-update-cmd": [
+      "@move-wordpress"
+    ]
+  }
+}

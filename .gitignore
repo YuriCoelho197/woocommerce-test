@@ -1,0 +1,62 @@
+### ignore all WordPress folders ###
+/wp-admin
+/wp-includes
+/wp-content/themes/*
+/wp-content/plugins/*
+/wp-content/uploads
+/wp-content/cache
+/wp-content/wflogs
+/wp-content/ai1wm-backups
+/wp-content/updraft
+/wp-content/mu-plugins
+/wp-content/*.php
+/wp-content/wp-rocket-config
+/wp-content/upgrade
+/wp-content/w3tc-config
+/wp-content/wpo-cache
+/wp-content/cimy-user-manager
+/wp-content/exports
+/wp-content/backups*
+/wp-content/gallery
+/wp-content/ngg
+
+### ignore all files in root ###
+/*.*
+
+### npm e composer ###
+node_modules
+.cache
+/vendor
+#/wp-content/themes/sumicity/vendor/
+#/wp-content/themes/sumicity/dist/
+
+### ignore log files and databases ###
+.devilbox
+.phpintel
+.htaccess
+.DS_Store
+*.log
+*.sql
+*.sqlite
+*.zip
+*.tgz
+*.gz
+*.tar
+*.tar.gz
+**/.git
+
+### files to kee###
+!.gitignore
+!.github
+!README.md
+!composer.json
+!composer.lock
+!composer.lock
+!runWPbackup.php
+!/robots.txt
+!/.editorconfig
+!wp-content/languages/*
+# Theme
+#wp-content/themes/sumicity
+# Plugins
+#!/wp-content/plugins/apiki-gutenberg

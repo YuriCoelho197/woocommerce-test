@@ -1,0 +1,309 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c42dd275267478cc5e39f267b49b01b8",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
+                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "tastyigniter",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-13T08:21:20+00:00"
+        },
+        {
+            "name": "roots/wordpress",
+            "version": "5.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WordPress/WordPress.git",
+                "reference": "5.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/refs/tags/5.9"
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "roots/wordpress-core-installer": ">=1.0.0"
+            },
+            "provide": {
+                "wordpress/core-implementation": "5.9"
+            },
+            "type": "wordpress-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "https://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "https://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "support": {
+                "docs": "https://developer.wordpress.org/",
+                "forum": "https://wordpress.org/support/",
+                "irc": "irc://irc.freenode.net/wordpress",
+                "issues": "https://core.trac.wordpress.org/",
+                "rss": "https://wordpress.org/news/feed/",
+                "source": "https://core.trac.wordpress.org/browser",
+                "wiki": "https://codex.wordpress.org/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/roots",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-01-25T19:50:55+00:00"
+        },
+        {
+            "name": "roots/wordpress-core-installer",
+            "version": "1.100.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/wordpress-core-installer.git",
+                "reference": "73f8488e5178c5d54234b919f823a9095e2b1847"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/wordpress-core-installer/zipball/73f8488e5178c5d54234b919f823a9095e2b1847",
+                "reference": "73f8488e5178c5d54234b919f823a9095e2b1847",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.6.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "replace": {
+                "johnpbloch/wordpress-core-installer": "*"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0 || ^2.0",
+                "phpunit/phpunit": ">=5.7.27"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Roots\\Composer\\WordPressCorePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Roots\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John P. Bloch",
+                    "email": "me@johnpbloch.com"
+                },
+                {
+                    "name": "Roots",
+                    "email": "team@roots.io"
+                }
+            ],
+            "description": "A custom installer to handle deploying WordPress with composer",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/roots/wordpress-core-installer/issues",
+                "source": "https://github.com/roots/wordpress-core-installer/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/roots",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-08-20T00:27:30+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "6.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/6.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.6.1.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
