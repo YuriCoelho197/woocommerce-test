@@ -2,8 +2,7 @@
     "name": "woocommerce/woocommerce-test",
     "description": "woocommerce",
     "require": {
-        "php": "^7.2||^8.0",
-        "roots/wordpress": "*",
+        "roots/wordpress": "5.9",
         "wpackagist-plugin/woocommerce": "^6.1",
         "wpackagist-theme/storefront": "^3.9"
     },
@@ -37,8 +36,8 @@
     },
     "config": {
         "allow-plugins": {
-            "composer/installers": false,
-            "roots/wordpress-core-installer": false
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true
         }
     }
 }

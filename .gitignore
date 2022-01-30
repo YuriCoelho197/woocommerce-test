@@ -57,6 +57,6 @@ node_modules
 !/.editorconfig
 !wp-content/languages/*
 # Theme
-#wp-content/themes/sumicity
+wp-content/
 # Plugins
 #!/wp-content/plugins/apiki-gutenberg
