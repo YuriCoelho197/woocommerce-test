@@ -22,6 +22,7 @@ $I->fillField('#billing_phone', '11223344');
 $I->fillField('#billing_email', 'teste@gmail.com');
 $I->fillField('#billing_postcode', '11223344');
 
+
 $I->wait(2);
 $I->click([ 'id' => 'place_order']);
 
