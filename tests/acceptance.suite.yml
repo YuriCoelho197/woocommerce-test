@@ -6,16 +6,18 @@
 
 actor: AcceptanceTester
 modules:
+    paths:
+        envs: 
     enabled:
         - WPDb
         - WPWebDriver
     config:
         WPDb:
             dsn: 'mysql:host=172.16.238.12;port=3306;dbname=woocommerce_test_db'
-            user: 'root'
+            user: "root"
             password: ''
-            #dump: 'tests/_data/woocommerce_test_db.sql'            
-            populate: false #import the dump before the tests
+            dump: 'tests/_data/woocommerce_test_db.sql'            
+            populate: true
             cleanup: false #import the dump between tests
             url: 'http://woocommerce-test.loc'
             keepBrowserState: true

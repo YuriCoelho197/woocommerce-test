@@ -55,6 +55,7 @@ node_modules
 !runWPbackup.php
 !/robots.txt
 !/.editorconfig
+!tests/_data/woocommerce_test_db.sql
 !wp-content/languages/*
 # Theme
 wp-content/
