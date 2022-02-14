@@ -23,4 +23,10 @@ class AcceptanceTester extends \Codeception\Actor
     /**
      * Define custom actions here
      */
+
+    public function get_order()
+    {
+        return $this->executeJS( "location.href.split('/')[5];" );
+    }
+
 }

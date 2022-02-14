@@ -7,6 +7,16 @@ namespace Helper;
 class Acceptance extends \Codeception\Module
 {
 
-    
+    public function getCurrentUrl()
+    {
+        return $this->getModule('WPWebDriver')->_getCurrentUri();
+    }
 
+    public function getOrder()
+    {
+        $url = $this->getCurrentUrl();
+        $get_url = explode( '/', $url );
+
+        return $get_url[3];
+    }
 }

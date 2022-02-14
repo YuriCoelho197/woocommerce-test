@@ -1,4 +1,6 @@
 <?php 
 $I = new AcceptanceTester($scenario);
 
-//$I->seeInDatabase('wc_customer_lookup', ['email' => 'teste@gmail.com']);
+$order = $I->getOrder();
+
+$I->seeInDatabase('wp_wc_order_stats', ['order_id' => $order ]);
