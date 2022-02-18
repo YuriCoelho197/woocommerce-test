@@ -17,6 +17,6 @@ class Acceptance extends \Codeception\Module
         $url = $this->getCurrentUrl();
         $get_url = explode( '/', $url );
 
-        return $get_url[3];
+        return intval( $get_url[3] );
     }
 }

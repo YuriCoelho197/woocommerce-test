@@ -17,8 +17,8 @@ modules:
             dsn: 'mysql:host=172.16.238.12;port=3306;dbname=woocommerce_test_db'
             user: 'root'
             password: ''
-            dump: 'tests/_data/woocommerce_test_db.sql'            
-            populate: true #import database
+            #dump: 'tests/_data/woocommerce_test_db.sql'            
+            populate: false #import database
             cleanup: false #import the dump between tests
             url: 'http://woocommerce-test.loc'
             keepBrowserState: true
