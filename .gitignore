@@ -57,6 +57,7 @@ node_modules
 !/.editorconfig
 !tests/_data/woocommerce_test_db.sql
 !wp-content/languages/*
+!package.json
 # Theme
 wp-content/
 # Plugins

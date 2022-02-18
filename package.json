@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "selenium-standalone": "^8.0.9"
+  }
+}
