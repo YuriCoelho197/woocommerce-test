@@ -28,8 +28,9 @@ modules:
             tablePrefix: 'wp_'
         WPWebDriver:
             url: 'http://woocommerce-test.loc'
-            browser: firefox
+            browser: chrome
             window_size: false # disabled in ChromeDriver
+            #host: 'localhost'
             port: 4444
             adminUsername: 'admin'
             adminPassword: '123'
