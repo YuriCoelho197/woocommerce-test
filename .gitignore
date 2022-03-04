@@ -51,7 +51,6 @@ node_modules
 !README.md
 !composer.json
 !composer.lock
-!composer.lock
 !runWPbackup.php
 !/robots.txt
 !/.editorconfig

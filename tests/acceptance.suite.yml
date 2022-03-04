@@ -6,19 +6,19 @@
 
 actor: AcceptanceTester
 modules:
-    paths:
-        envs: 
+    params:
+        - env #TO DO SET .ENV FILE
     enabled:
         - \Helper\Acceptance
         - WPDb
         - WPWebDriver
     config:
         WPDb:
-            dsn: 'mysql:host=172.16.238.12;port=3306;dbname=woocommerce_test_db'
+            dsn: 'mysql:host=172.16.238.12;port=3306;dbname=apiki_test_woocommerce'
             user: 'root'
             password: ''
-            #dump: 'tests/_data/woocommerce_test_db.sql'            
-            populate: false #import database
+            dump: 'tests/_data/apiki_test_woocommerce.sql'
+            populate: true #import database
             cleanup: false #import the dump between tests
             url: 'http://woocommerce-test.loc'
             keepBrowserState: true

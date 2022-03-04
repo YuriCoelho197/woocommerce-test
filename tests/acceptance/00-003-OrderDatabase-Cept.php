@@ -6,4 +6,4 @@ $order = $I->getOrder();
 
 $I->wait(2);
 
-$I->seeInDatabase('wp_woocommerce_order_items', ['order_id' => $order ]);
+$I->seeInDatabase( 'wp_woocommerce_order_items', [ 'order_id' => $order ] );

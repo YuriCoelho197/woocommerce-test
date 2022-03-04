@@ -1,10 +1,10 @@
-# Woocommerce CodeCeption
+# Woocommerce Tests CodeCeption
 
 ## Instale o Wordpress e plugins com o composer
 
 ```
  composer install
- edita o wp-config.php
+ edite o wp-config.php
 ```
 
 ## Instale o Selenium Standalone com o yarn
