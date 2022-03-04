@@ -54,7 +54,7 @@ node_modules
 !runWPbackup.php
 !/robots.txt
 !/.editorconfig
-!tests/_data/woocommerce_test_db.sql
+!tests/_data/apiki_test_woocommerce.sql
 !wp-content/languages/*
 !package.json
 # Theme
