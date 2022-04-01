@@ -45,7 +45,7 @@ node_modules
 *.tar.gz
 **/.git
 
-### files to kee###
+### files to keep###
 !.gitignore
 !.github
 !README.md
@@ -57,6 +57,8 @@ node_modules
 !tests/_data/apiki_test_woocommerce.sql
 !wp-content/languages/*
 !package.json
+!.env.example
+!codeception.yml
 # Theme
 wp-content/
 # Plugins

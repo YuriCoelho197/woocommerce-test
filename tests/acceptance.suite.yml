@@ -6,34 +6,32 @@
 
 actor: AcceptanceTester
 modules:
-    params:
-        - env #TO DO SET .ENV FILE
     enabled:
         - \Helper\Acceptance
         - WPDb
         - WPWebDriver
     config:
         WPDb:
-            dsn: 'mysql:host=172.16.238.12;port=3306;dbname=apiki_test_woocommerce'
-            user: 'root'
-            password: ''
-            #dump: 'tests/_data/apiki_test_woocommerce.sql'
+            dsn: 'mysql:host=%DB_HOST%;port=%DB_PORT%;dbname=%DB_DATABASE%'
+            user: '%DB_USERNAME%'
+            password: '%DB_PASSWORD%'
+            dump: 'tests/_data/apiki_test_woocommerce.sql'
             populate: false #import database
             cleanup: false #import the dump between tests
-            url: 'http://woocommerce-test.loc'
+            url: '%SITE_URL%'
             keepBrowserState: true
-            port: '80'
+            port: '%PORT%'
             fullPageScreenshots: true
             urlReplacement: false #replace the hardcoded dump URL with the one above
             tablePrefix: 'wp_'
         WPWebDriver:
-            url: 'http://woocommerce-test.loc'
+            url: '%SITE_URL%'
             browser: chrome
             window_size: false # disabled in ChromeDriver
             #host: 'localhost'
             port: 4444
-            adminUsername: 'admin'
-            adminPassword: '123'
+            adminUsername: '%USER_LOGIN%'
+            adminPassword: '%USER_PASS%'
             adminUrl: /wp-admin
-        
-step_decorators: ~        
+
+step_decorators: ~
